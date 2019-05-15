@@ -5,6 +5,19 @@ const {app, BrowserWindow} = require('electron')
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
+// !Playing with bcrypt (Native node modules installing electron)
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+const myPlaintextPassword = 's0/\/\P4$$w0rD';
+const someOtherPlaintextPassword = 'not_bacon';
+
+bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
+  // Store hash in your password DB.
+  console.log(hash);
+});
+
+
+
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({

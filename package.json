@@ -22,5 +22,7 @@
     "electron": "^5.0.0",
     "electron-builder": "^20.39.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bcrypt": "^3.0.6"
+  }
 }
