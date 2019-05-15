@@ -16,7 +16,7 @@ bcrypt.hash(myPlaintextPassword, saltRounds, function(err, hash) {
   console.log(hash);
 });
 
-
+// !-----------Password hasing---------------------
 
 function createWindow () {
   // Create the browser window.
